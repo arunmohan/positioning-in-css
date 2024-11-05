@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            Positioning in CSS
+        </title>
+        <style>
+           div{
+            border: 3px solid black;
+           }
+           .fixed{
+            position: fixed;
+            top: 0;
+            right: 20px;
+            width: 300px;
+           }
+           .relative{
+            position: relative;
+            left: 100px;
+            border: 3px solid rgb(151, 85, 5);
+           }
+           .absolute{
+            position: absolute;
+            left: 100px;
+            border: 3px solid rgb(151, 85, 5);
+           }
+           .sticky{
+            position: sticky;
+            top: 1px;
+            left: 20px;
+            width: 100px;
+           }
+        </style>
+    </head>
+    <body>
+        <h1>Positioning in CSS</h1>
+        <ul>
+            <li>Fixed</li>
+            <li>Static</li>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Sticky</li>
+        </ul>
+        <div>
+            <p>
+                This is a division with no property
+            </p>
+        </div>
+        <div class="fixed">
+            <p>
+                This is a division with fixed property 
+            </p>
+        </div>
+        <div class="relative">
+            <p>
+                This is a division with a relative property
+            </p>
+            <div class="absolute">
+                <p>
+                    This is a division with a absolute value
+                </p>
+            </div>
+        </div>
+     
+        <div class="sticky">
+            <p>
+                This is a division with a sticky
+            </p>
+        </div>    
+    </body>
+</html>
